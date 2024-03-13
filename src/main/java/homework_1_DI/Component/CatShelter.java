@@ -17,12 +17,18 @@ public class CatShelter {
 
     // введение через поле
     @Autowired
-    OrangeHouseCat orangeHouseCat;
+    public OrangeHouseCat orangeHouseCat;
 
     // введение через сеттер
-    WhiteHouseCat whiteHouseCat;
+    public WhiteHouseCat whiteHouseCat;
     @Autowired
     public void setWhiteHouseCat(WhiteHouseCat whiteHouseCat){
         this.whiteHouseCat = whiteHouseCat;
+    }
+
+    private void catsMeow() {
+        orangeHouseCat.Meow();
+        blackHouseCat.Meow();
+        whiteHouseCat.Meow();
     }
 }
