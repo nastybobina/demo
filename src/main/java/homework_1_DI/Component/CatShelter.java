@@ -10,9 +10,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class CatShelter {
     // введение через конструктор
-    BlackHouseCat blackHouseCat;
-
-    @Autowired
+    public final BlackHouseCat blackHouseCat;
     public CatShelter(BlackHouseCat blackHouseCat) {
         this.blackHouseCat = blackHouseCat;
     }
