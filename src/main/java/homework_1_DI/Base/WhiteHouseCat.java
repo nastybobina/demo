@@ -4,8 +4,6 @@ import lombok.extern.log4j.Log4j2;
 
 @Log4j2
 public class WhiteHouseCat implements CatBehavior {
-    public WhiteHouseCat() {
-    }
 
     public void Sleep() {
         log.info("The white cat is not sleeping.");
