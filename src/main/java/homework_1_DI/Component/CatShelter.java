@@ -12,18 +12,19 @@ public class CatShelter {
     // введение через конструктор
     @Getter
     private final CatBehavior blackHouseCat;
-    public CatShelter(BlackHouseCat blackHouseCat) {
+    private CatShelter(CatBehavior blackHouseCat) {
         this.blackHouseCat = blackHouseCat;
     }
 
     // введение через поле
     @Autowired
-    public CatBehavior orangeHouseCat;
+    private CatBehavior orangeHouseCat;
 
+    @Getter
+    private CatBehavior whiteHouseCat;
     // введение через сеттер
-    public CatBehavior whiteHouseCat;
     @Autowired
-    public void setWhiteHouseCat(WhiteHouseCat whiteHouseCat){
+    private void setWhiteHouseCat(CatBehavior whiteHouseCat){
         this.whiteHouseCat = whiteHouseCat;
     }
 
