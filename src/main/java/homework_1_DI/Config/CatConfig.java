@@ -12,17 +12,17 @@ import org.springframework.context.annotation.Scope;
 public class CatConfig {
     @Bean
     @Scope(value = "prototype")
-    public BlackHouseCat blackHouseCat(){
+    public CatBehavior blackHouseCat(){
         return new BlackHouseCat();
     }
     @Bean
     @Scope(value = "prototype")
-    public OrangeHouseCat orangeHouseCat() {
+    public CatBehavior orangeHouseCat() {
         return new OrangeHouseCat();
     }
     @Bean
     @Scope(value = "prototype")
-    public WhiteHouseCat whiteHouseCat() {
+    public CatBehavior whiteHouseCat() {
         return new WhiteHouseCat();
     }
 }
